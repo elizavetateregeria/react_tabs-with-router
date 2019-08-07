@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter, Route, Switch, NavLink,
+  HashRouter, Route, Switch, NavLink,
 } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
 import TabsPage from './components/TabsPage';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <div className="App">
       <nav>
         <ul className="menu">
@@ -37,7 +37,7 @@ const App = () => (
         <Route path="/tabs/:tabId?" component={TabsPage} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
